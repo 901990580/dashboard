@@ -1,0 +1,71 @@
+.sidebar {
+  height: 100vh;
+  background-color: #2c3e50;
+  transition: width 0.7s, background-color 0.7s;
+  position: fixed; /* Fixed qilish */
+  left: 0; /* Ekranning chap tomonida joylashish */
+  top: 60px; /* Ekranning yuqori qismida joylashish */
+  overflow: hidden;
+  width: 300px; /* Ochiq sidebar uchun kenglik */
+  z-index: 1000; /* Ustunlikni oshirish */
+}
+
+.sidebar.closed {
+  width: 50px; /* Yopiq sidebar uchun kenglik */
+}
+
+.top_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.dashboard {
+  color: #ecf0f1;
+  font-size: 24px;
+}
+
+.bars {
+  color: #ecf0f1;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ecf0f1;
+  padding: 15px 20px;
+  transition: background 0.7s;
+}
+
+.link:hover {
+  background-color: #34495e;
+}
+
+.icon {
+  font-size: 20px;
+  min-width: 30px; 
+}
+
+.link_text {
+  margin-left: 10px;
+  transition: opacity 0.3s;
+}
+
+.link.active {
+  background-color: #007bff; 
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: none;
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 0.3s;
+}

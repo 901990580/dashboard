@@ -1,0 +1,62 @@
+.new-dashboard {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9; /* Sahifa fon rangi */
+  border-radius: 8px; /* Burchaklar yumshatish */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soxtalashtirish */
+}
+
+.dashboard-title {
+  font-size: 28px;
+  margin-bottom: 20px; /* Pastga masofa */
+  color: #34495e; /* Sarlavha rangi */
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px; /* Pastga masofa */
+}
+
+.card {
+  background-color: white; /* Karta foni */
+  border-radius: 8px; /* Burchaklar yumshatish */
+  padding: 15px;
+  flex: 1; /* Karta kengligini belgilash */
+  margin: 0 10px; /* Karta o'rtasidagi masofa */
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Soxtalashtirish */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Markazlashtirish */
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Hoverda ko'tarish effekt */
+}
+
+.card-icon {
+  font-size: 40px; /* Ikonalar o'lchami */
+  color: #007bff; /* Ikona rangi */
+  margin-bottom: 10px; /* Pastga masofa */
+}
+
+.charts-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chart-section {
+  flex: 1; /* Grafik kengligini belgilash */
+  margin: 0 10px; /* Grafiklar o'rtasidagi masofa */
+  background-color: white; /* Grafik fon rangi */
+  border-radius: 8px; /* Burchaklar yumshatish */
+  padding: 15px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Soxtalashtirish */
+}
+
+.chart-section h3 {
+  margin-bottom: 15px; /* Pastga masofa */
+  color: #34495e; /* Sarlavha rangi */
+}
